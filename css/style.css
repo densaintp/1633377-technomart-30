@@ -37,6 +37,7 @@
  --green: #8ED78F;
  --white: #FFFFFF;
  --popular: #F9F5F0;
+
 }
 
 /* global */
@@ -86,11 +87,12 @@ ul {
 }
 
 .button:focus {
-    background: #BA2732;
+    background: var(--click-on-logo);
 }
 
-.footer-nav ul:hover,
-.writeus a:hover {
+.footer-nav .footer-menu:hover,
+.writeus .mail:hover,
+.writeus .tel:hover {
     text-decoration: underline;
 
 }
@@ -104,21 +106,35 @@ ul {
     opacity: 0.5;
 }
 
-.header-nav li:focus {
+.header-nav .menu-item:focus {
     background: #1D2739;
     box-shadow: inset 0px -5px 0px #293449;
     color: #FFFFFF;
 }
 
-.header-nav li:hover {
+.header-nav .menu-item:hover {
     background: #293449;
     box-shadow: inset 0px -5px 0px #293449;
 }
+
 /* Header */
 
 .logo {
-    background-image: url(../img/LayerLogo.png);
-    
+    background-color: var(--button);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-logo {
+    padding: 12px 56px 17px 56px;
+}
+
+.header-logo:focus, 
+.footer-logo:focus{
+    background-color: var(--click-on-logo);
+}
+
+.footer-logo {
+    padding: 20px 41px 25px 41px;
 }
 
 .loginfield {
@@ -136,7 +152,7 @@ ul {
     display: inline;
 }
 
-.header-nav {
+.header-menu {
     background: #32425C;
     font-style: normal;
     font-weight: normal;
@@ -173,7 +189,7 @@ ul {
 /* Main */
 
 body {
-    font-family: "Cuprum Regular";
+    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif;
     min-width: 960px;
     margin: 0px;
     padding: 0px;
@@ -181,30 +197,27 @@ body {
     font-size: 18px;
 }
 
-.feature-1,
-.feature-2,
-.feature-3,
-.feature-5,
-.feature-6 {
+.feature__block {
     width: 300px;
     height: 123px;
     box-sizing: border-box;
+    background-color: var(--orange);
+
 }
 
-.feature-1,
-.feature-6 {
+.feature__block {
     background-color: var(--orange);
 }
 
-.feature-2 {
+.feature__block--blue {
     background-color: var(--blue);
 }
 
-.feature-3 {
+.feature__block--purple {
     background-color: var(--purple);
 }
 
-.feature-5 {
+.feature__block--green {
     background-color: var(--green);
 }
 
@@ -216,10 +229,24 @@ body {
 
 .features h2 {
     color: var(--white);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 24px;
     font-style: normal;
     line-height: 30px;
+}
+
+.featurebox {
+    display: block;
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 14px;
+    font-size: 14px;
+    line-height: 18px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    width: 135px;
+    height: 38px;
 }
 
 h2 a {
@@ -237,15 +264,14 @@ h2 a {
 }
 
 .goods {
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
-    display: inline;
-    height: 1500px;
+    display: inline-block;
 }
 
 .popular-text {
-    font-family: Cuprum;
+    font-family: "Cuprum", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -260,13 +286,13 @@ h2 a {
     background-color: var(--popular);
 }
 
-.pricetag {
-    font-family: PT Sans;
+a.pricetag {
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
-    background-image: url(..img/pricetag.png);
+    background-image: url(../img/pricetag.png);
 }
 
 .services {
@@ -276,7 +302,7 @@ h2 a {
 h3 {
     font-weight: normal;
     font-style: normal;
-    font-size: #000000;
+    color: #000000;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -292,7 +318,7 @@ h3 {
 }
 
 .content-text {
-    font-family: PT Sans;
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
