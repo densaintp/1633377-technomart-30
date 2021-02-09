@@ -24,6 +24,11 @@
     font-family: "PT Sans Regular";
     src: url("../fonts/ptsans.woff");
   }
+
+  @font-face {
+    font-family: "PT Sans Bold";
+    src: url("../fonts/ptsansbold.woff");
+  }
   
 
 :root {
@@ -53,10 +58,12 @@ h1 {
 
 .contacts-header .tel-head {
     font-size: 21px; 
+    color: var(--button);
 }
 
 a {
     text-decoration: none;
+    color: var(--white);
 }
 
 .button {
@@ -119,6 +126,10 @@ ul {
 
 /* Header */
 
+.cap {
+    background: #293449;
+}
+
 .logo {
     background-color: var(--button);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -140,6 +151,25 @@ ul {
 .loginfield {
     background-color: var(--white);
     font-size: 21px;
+}
+
+.login,
+.registration {
+    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;  
+    color: #000000;
+}
+
+.myorders,
+.cab {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--nav-color);
 }
 
 .order {
@@ -237,7 +267,7 @@ body {
 
 .featurebox {
     display: block;
-    font-family: "Cuprum";
+    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: 14px;
     font-size: 14px;
@@ -256,6 +286,34 @@ h2 a {
     line-height: 18px;
 }
 
+.root {
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.crossed {
+    color: #A9A9A9;
+    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.catalogfilter {
+    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    color:black;
+}
+
 .product-item {
     width: 220px;
     height: 318px;
@@ -271,7 +329,7 @@ h2 a {
 }
 
 .popular-text {
-    font-family: "Cuprum", "TimesNewRoman", sans-serif;
+    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -287,7 +345,7 @@ h2 a {
 }
 
 a.pricetag {
-    font-family: "PT Sans", "TimesNewRoman", sans-serif;
+    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -324,6 +382,32 @@ h3 {
     font-size: 13px;
     line-height: 24px; 
     color: #000000;     
+}
+
+.filter {
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: black;
+    background-color:#F7F3EC;
+}
+
+.type {
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+.delivery {
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px; 
+    color: var(--nav-color);  
 }
 
 .warrants {
