@@ -265,18 +265,16 @@ body {
     line-height: 30px;
 }
 
-.featurebox {
-    display: block;
-    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif;
-    font-style: normal;
-    font-weight: 14px;
-    font-size: 14px;
-    line-height: 18px;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.3;
-    width: 135px;
-    height: 38px;
+.featurebox { 
+    display: block; 
+    font-family: "Cuprum Regular", "TimesNewRoman", sans-serif; 
+    font-style: normal; 
+    font-size: 14px; 
+    line-height: 18px; 
+    background: rgba(255, 255, 255, 0.3); 
+    mix-blend-mode: normal; 
+    width: 135px; 
+    height: 38px; 
 }
 
 h2 a {
@@ -298,7 +296,7 @@ h2 a {
 
 .crossed {
     color: #A9A9A9;
-    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -306,7 +304,7 @@ h2 a {
 }
 
 .catalogfilter {
-    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -344,8 +342,8 @@ h2 a {
     background-color: var(--popular);
 }
 
-a.pricetag {
-    font-family: "PT Sans Bold", "TimesNewRoman", sans-serif;
+.pricetag {
+    font-family: "PT Sans", "TimesNewRoman", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
