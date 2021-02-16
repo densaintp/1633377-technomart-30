@@ -155,11 +155,8 @@ ul {
     display: grid;
     grid-template-columns: 123px 123px 123px;
     grid-template-rows: 123px 266px;
-    margin: 0px;
-}
-
-.features article {
-    column-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;
 }
 
 .products-list {
@@ -365,8 +362,8 @@ body {
 
 .feature__block--blue {
     background-color: var(--blue);
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
 .feature__block--purple {
