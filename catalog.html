@@ -13,6 +13,7 @@
 
   <body class="page-body">
     <header class="main-header">
+      <div class="header-cap-wrap">
       <div class="cap">
         <h1 class="hidden">Компания «ТЕХНОМАРТ»</h1>
         <a href="#" class="logo header-logo"
@@ -29,6 +30,7 @@
         <a href="#">Закладки: <span>0</span></a>
         <a href="#">Корзина: <span>10</span></a>
         <a href="#">Оформить заказ</a>
+      </div>
       </div>
       <section class="afterhead">
         <div class="about">
@@ -63,7 +65,7 @@
         </nav>
       </section>
     </header>
-    <main>
+    <main class="container">
       <div>
         <ul>
           <li>
@@ -81,6 +83,7 @@
         </ul>
       </div>
       <h2 class="popular-text services">Перфораторы</h2>
+      <div class="maincatalog">
       <div>
         <span class="filter"> ФИЛЬТР: </span>
         <section>
@@ -95,8 +98,7 @@
             <input type="number" min="0" max="35500" step="100" value="30000" />
           </label>
         </section>
-      </div>
-      <section>
+      <section class="producersfilter">
         <h2 class="hidden">Фильтр товаров</h2>
         <form>
           <fieldset>
@@ -140,6 +142,7 @@
           <button type="submit">ПОКАЗАТЬ</button>
         </form>
       </section>
+      </div>
       <section>
         <span class="filter"> СОРТИРОВКА: </span>
         <div class="filter">
@@ -147,7 +150,7 @@
           <a href="#" class="filter type">По типу</a>
           <a href="#" class="filter type">По функционалу</a>
         </div>
-        <ul>
+        <ul class="catalogproducers">
           <li class="product-item">
             <a href="#"
               ><img
@@ -255,6 +258,7 @@
             <a href="#" class="pricetag">12500 Р.</a>
           </li>
         </ul>
+        </div>
         <div>
           <a href="#">1</a>
           <a href="#">2</a>
@@ -282,6 +286,8 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="footer-wrapper">
+        <div class="footerfirst">
       <a class="logo footer-logo" href="#"
         ><img
           class="logosvg"
@@ -306,6 +312,8 @@
           <li><a class="secondfloor" href="#">Спецпредложения</a></li>
         </ul>
       </nav>
+        </div>
+      <div class="lowfooter-wrapper">
       <section class="lowfooter">
         <div class="copyrights">
           <p>© 2010–2019 Компания «Техномарт»<br />Все права защищены</p>
@@ -330,6 +338,8 @@
           </p>
         </div>
       </section>
+    </div>
+  </div>
     </footer>
   </body>
 </html>
